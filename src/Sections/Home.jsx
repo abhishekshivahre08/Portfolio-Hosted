@@ -3,7 +3,7 @@ import ParticlesBackground from '../Components/ParticlesBackground'
 import { motion } from "framer-motion";
 import {FaXTwitter, FaLinkedin, FaGithub,   } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
-import avator from "../assets/avator.png";
+import avator from "../assets/avator.webp";
 import MusicPlayer from '../Components/MusicPlayer';
 
 const socials =[

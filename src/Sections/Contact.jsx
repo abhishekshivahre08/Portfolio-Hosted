@@ -3,7 +3,7 @@ import { useState } from 'react';
 import emailjs from "@emailjs/browser";
 import ParticalesBackground from "../Components/ParticlesBackground";
 import { motion } from "framer-motion";
-import Astra from "../assets/Astra.png";
+import Astra from "../assets/Astra.webp";
 import confetti from 'canvas-confetti';
 
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;

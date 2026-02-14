@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import m1 from "../assets/m1.PNG";
-import m2 from "../assets/naveen.jpeg";
+import m2 from "../assets/naveen.webp";
 import w1 from "../assets/w1.PNG";
-import w2 from "../assets/khusboo1.jpeg";
+import w2 from "../assets/khusboo1.webp";
 import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [

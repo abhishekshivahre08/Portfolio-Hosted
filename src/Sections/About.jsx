@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import p from "../assets/p.png";
+import p from "../assets/p.webp";
 import p2 from "../assets/p2.png";
 import ParticlesBackground from '../Components/ParticlesBackground'
 import ProfileCard from './ProfileCard'

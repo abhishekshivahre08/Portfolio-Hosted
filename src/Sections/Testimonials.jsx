@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import m1 from "../assets/m1.PNG";
-import m2 from "../assets/naveen.JPEG";
+import m2 from "../assets/naveen.jpeg";
 import w1 from "../assets/w1.PNG";
 import w2 from "../assets/khusboo1.jpeg";
 import { motion, AnimatePresence } from "framer-motion";

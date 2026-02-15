@@ -32,7 +32,7 @@ const certifications = [
     color: "#00d8ff", 
     particleColor: "#00d8ff", 
     link: "https://drive.google.com/file/d/1EVgDs49DJUrNkkoVnge-KQ8mYKnlOCLU/view?usp=sharing",
-    img: JSCertImage 
+    img: DefaultCert,
   },
   { 
     title: "Full Stack Developer", 

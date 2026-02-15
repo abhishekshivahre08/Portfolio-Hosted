@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 
 // Image Imports - Yahan aap apni nayi images import karein
 import DefaultCert from '../assets/Portfoio certificate.png';
-// import JSCertImage from '../assets/javaScript.png';
+import JSCertImage from '../assets/javaScript.png';
 // import JavaCert from '../assets/java-cert.png'; // Example for new image
 
 const certifications = [
@@ -32,7 +32,7 @@ const certifications = [
     color: "#00d8ff", 
     particleColor: "#00d8ff", 
     link: "https://drive.google.com/file/d/1EVgDs49DJUrNkkoVnge-KQ8mYKnlOCLU/view?usp=sharing",
-    img: DefaultCert 
+    img: JSCertImage 
   },
   { 
     title: "Full Stack Developer", 

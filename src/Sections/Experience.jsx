@@ -25,7 +25,7 @@ const experiences = [
   },
   {
     role: "Graduate Engineer",
-    company: "HCL Technologies",
+    company: "",
     duration: "2025",
     description: "Built frontend of GenAI-powered PV Intake App with Next.js & TS for US client.",
   },

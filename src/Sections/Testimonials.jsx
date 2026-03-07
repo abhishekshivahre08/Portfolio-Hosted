@@ -6,6 +6,7 @@ import w1 from "../assets/w1.PNG";
 import w2 from "../assets/khusboo1.webp";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 const testimonials = [
   { name: "Yash Sahu", role: "Software Engineer at HCL Technologies", review: "Abhishek is a visionary developer. His attention to detail and creativity blew us away. Our project was a massive success because of him.", image: m1 },
   { name: "Heather Forster", role: "UI/UX Designer at PixelWorks", review: "Working with Abhishek was an absolute pleasure. He brings design and code together like magic. Highly recommend him!", image: w1 },
@@ -118,9 +119,13 @@ export default function Testimonials() {
               <h3 className="text-2xl font-bold text-white">{t.name}</h3>
               <p className="text-sm text-blue-400 font-bold uppercase tracking-[0.2em] mt-2">{t.role}</p>
             </div>
+            
           </motion.div>
         ))}
+       
       </div>
+      
+      
     </section>
   );
 }

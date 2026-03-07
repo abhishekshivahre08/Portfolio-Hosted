@@ -3,14 +3,17 @@ import ParticlesBackground from '../Components/ParticlesBackground'
 import { motion } from "framer-motion";
 import {FaXTwitter, FaLinkedin, FaGithub,   } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import avator from "../assets/avator.webp";
 import MusicPlayer from '../Components/MusicPlayer';
+import Scroll from '../Components/Scroll';
 
 const socials =[
   // { Icon : FaXTwitter , label : "X", href : "#Twiter"},
   { Icon : FaLinkedin , label : "Linkedin", href :"https://www.linkedin.com/in/abhishek-shivhare-42009b327/?originalSubdomain=in"},
   { Icon : FaGithub , label : "Github", href :"https://github.com/abhishekshivahre08"},
-  { Icon : FaInstagramSquare, label : "Instagram", href:"https://www.instagram.com/abhishekshivhare_/?hl=en"}
+  { Icon : FaInstagramSquare, label : "Instagram", href:"https://www.instagram.com/abhishekshivhare_/?hl=en"},
+   { Icon : SiLeetcode, label : "LeetCode", href:"https://leetcode.com/u/tXr52U1P24/"}
 
 ]
 
@@ -49,6 +52,7 @@ export default function Home() {
   return (
     <section id='home' className='w-full h-screen relative bg-black overflow-hidden'>
       <ParticlesBackground />
+     
      
       <div className='absolute inset-0'>
         <div
@@ -187,9 +191,10 @@ bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] drop-shadow-lg'
         </motion.div>
       </div>
        <MusicPlayer/>
+     <Scroll/>
       </div>
 
-    
+         
     
     </section>
   )

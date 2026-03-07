@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { useScroll } from 'framer-motion';
 import { useMemo } from 'react';
 import ParticlesBackground from '../Components/ParticlesBackground';
+import Scroll from '../Components/Scroll';
 
 
 
@@ -185,7 +186,7 @@ export default function Experience() {
 
           </div>
         </div>
-
+<Scroll/>
       </div>
     </section>
      

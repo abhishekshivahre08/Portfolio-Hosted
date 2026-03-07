@@ -10,6 +10,7 @@ import photo3 from "../assets/photo3.webp"
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from 'framer-motion'
 import ParticlesBackground from '../Components/ParticlesBackground'
 
+
 const useIsMobile = (query = '(max-width :639px)') => {
   const [isMobile, setIsMobile] = useState(
     typeof window !== "undefined" && window.matchMedia(query).matches
@@ -83,20 +84,20 @@ export default function Projects() {
         height: `${100 * projects.length}vh`,
         backgroundColor: activeProject.bgColor,
         transition: "background-color 400ms ease"
-      }} 
-           initial={{ opacity: 0, y: -30 }}
-        whileInView={{opacity:1, y:0}}
-        // animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.1 }}>
+      }}
+      initial={{ opacity: 0, y: -30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      // animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2, delay: 0.1 }}>
 
 
       <div className="sticky top-0 h-screen flex flex-col items-center justify-center ">
-        <motion.h2 className={`text-5xl font-semibold z-10 text-center ${isMobile ? "mt-4" : "mt-8"}`} 
-        style={{fontFamily: 'Playfair Display, serif'}}
+        <motion.h2 className={`text-5xl font-semibold z-10 text-center ${isMobile ? "mt-4" : "mt-8"}`}
+          style={{ fontFamily: 'Playfair Display, serif' }}
           initial={{ opacity: 0, y: -30 }}
-        whileInView={{opacity:1, y:0}}
-        // animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 0.1 }}>
+          whileInView={{ opacity: 1, y: 0 }}
+          // animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.1 }}>
           My Projects
         </motion.h2>
         <div className={`relative w-full flex-1 flex items-center justify-center ${isMobile ? "-mt-4" : " "}`}>
@@ -144,18 +145,29 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div> 
-<div className={`absolute ${isMobile ? "bottom-20" : "bottom-10"}`}>
-  <a href={activeProject?.link}
-  target='_blank'
-  rel ="noopener noreferrer"
-  className='inline-block px-6 py-3 font-semibold rounded-lg bg-white text-black hover:bg-gray-200 transition-all'
-  aria-label={`View ${activeProject?.title}`}
-  >View Project</a>
-</div>
-
+        </div>
+        <div className={`absolute ${isMobile ? "bottom-20" : "bottom-15"}`}>
+          <a href={activeProject?.link}
+            target='_blank'
+            rel="noopener noreferrer"
+            className='inline-block px-6 py-3 font-semibold rounded-lg bg-white text-black hover:bg-gray-200 transition-all'
+            aria-label={`View ${activeProject?.title}`}
+          >View Project</a>
+        </div>
+        {/* Scroll animation */}
+        <div className="flex flex-col items-center gap-1 h-14">
+          <div className="w-[20px] h-[32px] rounded-full border-2 border-white/40 flex justify-center p-1">
+            <motion.div
+              animate={{ y: [0, 12, 0], opacity: [0.4, 1, 0.4] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="w-1 h-2 bg-white/60 rounded-full"
+            />
+          </div>
+          <span className="text-[9px] uppercase tracking-[0.3em] text-white/40 font-medium">Scroll</span>
+        </div>
 
       </div>
+
     </motion.section>
   )
 }

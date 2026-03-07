@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import ParticlesBackground from '../Components/ParticlesBackground';
 
+
 // Swiper Styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -268,6 +269,7 @@ const CertificationSection = () => {
         .swiper-pagination-bullet { background: #334155 !important; opacity: 1; }
         .swiper-pagination-bullet-active { background: #38bdf8 !important; width: 35px !important; border-radius: 10px !important; }
       `}</style>
+    
     </motion.div>
   );
 };

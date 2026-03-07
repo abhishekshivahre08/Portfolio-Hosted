@@ -4,6 +4,7 @@ import p from "../assets/p.webp";
 import p2 from "../assets/p2.png";
 import ParticlesBackground from '../Components/ParticlesBackground'
 import ProfileCard from './ProfileCard'
+// import Scroll from '../Components/Scroll';
 
 
 
@@ -117,6 +118,7 @@ rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#1cd8d2]/20 to-[#
           </p>
 
         </motion.div>
+          {/* <Scroll/> */}
       </div>
     </section>
   )

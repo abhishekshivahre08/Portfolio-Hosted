@@ -2,10 +2,10 @@ import React, { useMemo } from 'react'
 import { useState } from 'react'
 import { useEffect, useRef } from 'react'
 import img1 from "../assets/img1.JPG"
-import img2 from "../assets/img2.JPG"
+import img2 from "../assets/vigyansetu.png"
 import img3 from "../assets/img3.JPG"
 import photo1 from "../assets/photo1.JPG"
-import photo2 from "../assets/photo2.PNG"
+import photo2 from "../assets/photo2.png"
 import photo3 from "../assets/photo3.webp"
 import img4 from "../assets/stokepuls.png"
 import photo4 from "../assets/stokemobile.png"
@@ -25,6 +25,7 @@ const useIsMobile = (query = '(max-width :639px)') => {
 
     mql.addEventListener('change', handler);
     // setIsMobile(mql.matches);
+    // i am a dev
     return () => mql.removeEventListener('change', handler)
   }, [query])
   return isMobile;
@@ -55,7 +56,7 @@ export default function Projects() {
       {
         title: "VIGYAN SETU",
         link: "https://vigyan-seven.vercel.app/",
-        bgColor: "#3884d3",
+        bgColor: "#090a09",
         image: isMobile ? photo2 : img2,
       },
       {

@@ -7,6 +7,8 @@ import img3 from "../assets/img3.JPG"
 import photo1 from "../assets/photo1.JPG"
 import photo2 from "../assets/photo2.PNG"
 import photo3 from "../assets/photo3.webp"
+import img4 from "../assets/stokepuls.png"
+import photo4 from "../assets/stokemobile.png"
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from 'framer-motion'
 import ParticlesBackground from '../Components/ParticlesBackground'
 
@@ -38,6 +40,12 @@ export default function Projects() {
 
   const projects = useMemo(
     () => [
+        {
+        title: "StokePlus",
+        link: "https://stockpulse0.netlify.app/",
+        bgColor: "#180a45",
+        image: isMobile ? photo4 : img4,
+      },
       {
         title: "WanderStay",
         link: "https://wanderstay-6u90.onrender.com/listings",
@@ -127,7 +135,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover drop-shadow-xl md:drop-shadow-2xl"
+                  className="w-full h-full object-cover drop-shadow-xl  md:drop-shadow-2xl"
                   style={{
                     position: "relative",
                     zIndex: 10,

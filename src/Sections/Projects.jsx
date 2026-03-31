@@ -42,7 +42,7 @@ export default function Projects() {
   const projects = useMemo(
     () => [
         {
-        title: "StokePlus",
+        title: "StockPlus",
         link: "https://stockpulse0.netlify.app/",
         bgColor: "#180a45",
         image: isMobile ? photo4 : img4,

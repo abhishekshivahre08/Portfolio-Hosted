@@ -1,14 +1,14 @@
 import React, { useMemo } from 'react'
 import { useState } from 'react'
 import { useEffect, useRef } from 'react'
-import img1 from "../assets/img1.JPG"
-import img2 from "../assets/vigyansetu.png"
-import img3 from "../assets/img3.JPG"
-import photo1 from "../assets/photo1.JPG"
-import photo2 from "../assets/photo2.PNG"
-import photo3 from "../assets/photo3.webp"
-import img4 from "../assets/stokepuls.png"
-import photo4 from "../assets/stokemobile.png"
+import img1 from "../assets/WanderStayDesk.webp"
+import img2 from "../assets/vigyansetu.webp"
+import img3 from "../assets/abhiradesk.webp"
+import photo1 from "../assets/WanderStay.webp"
+import photo2 from "../assets/photo2.webp"
+import photo3 from "../assets/abhira.io.webp"
+import img4 from "../assets/stokepuls.webp"
+import photo4 from "../assets/stokemobile.webp"
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from 'framer-motion'
 import ParticlesBackground from '../Components/ParticlesBackground'
 
@@ -41,6 +41,12 @@ export default function Projects() {
 
   const projects = useMemo(
     () => [
+       {
+        title: "Abhira.io",
+        link: "https://drive.google.com/file/d/1r74Es6Gs83ImYcjhYB-PC3FTwsCZ0S1F/view?usp=sharing",
+        bgColor: "#05091c",
+        image: isMobile ? photo3 : img3,
+      },
         {
         title: "StockPlus",
         link: "https://stockpulse0.netlify.app/",
@@ -50,21 +56,17 @@ export default function Projects() {
       {
         title: "WanderStay",
         link: "https://wanderstay-6u90.onrender.com/listings",
-        bgColor: "#0d4d3d",
+        bgColor: "#1f1617",
         image: isMobile ? photo1 : img1, // use mobile or desktop image
       },
+    
       {
         title: "VIGYAN SETU",
         link: "https://vigyan-seven.vercel.app/",
         bgColor: "#090a09",
         image: isMobile ? photo2 : img2,
       },
-      {
-        title: "Hungry Tiger",
-        link: "https://drive.google.com/file/d/1r74Es6Gs83ImYcjhYB-PC3FTwsCZ0S1F/view?usp=sharing",
-        bgColor: "#dc9317",
-        image: isMobile ? photo3 : img3,
-      },
+    
     ],
     [isMobile] // re-run only when `isMobile` changes
   );

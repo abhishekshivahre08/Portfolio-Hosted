@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import OverlayMenu from "./OverlayMenu";
 import { useState } from 'react';
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo04.png";
 import { FiMenu } from "react-icons/fi";
 import { useRef } from 'react';
 

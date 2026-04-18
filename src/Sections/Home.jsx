@@ -129,8 +129,8 @@ bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] drop-shadow-lg'
               bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] 
               shadow-lg hover:scale-105 transition-all'style={{fontFamily: 'Playfair Display, serif'}} >View My Work</a>
                <a 
-               href="/abhishekfinalresume03.pdf" 
-    download="Abhishek_Shivhare_Resume.pdf"
+               href="/AbhiResumeFinal03.pdf" 
+    download="AbhiResumeFinal03.pdf"
                 style={{fontFamily: 'Playfair Display, serif'}}
               className='px-6 py-3 rounded-full text-lg font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transtion-all'>My Resume</a>
  
